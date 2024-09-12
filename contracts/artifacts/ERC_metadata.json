@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DIOToken.sol": "ERC"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DIOToken.sol": {
+			"keccak256": "0x05fcce11012082eaf931ac7f2b0bee5bcdf94437a45c525a8a6705146506841b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7b9950719fcb088076dc5ee0a287ff60be9b753d1aa8198710904d98d8cb4bec",
+				"dweb:/ipfs/QmYvQxMAgyEbqXzpbdLNoa6839qZZR8r97RDr4Boxepoy3"
+			]
+		}
+	},
+	"version": 1
+}

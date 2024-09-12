@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DIOToken.sol": "Name"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DIOToken.sol": {
+			"keccak256": "0xff6ec5f32abb9f1f593d390e112ef7fc5a7bf18bfb989159ce98473e0e998493",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c93a50a87cad3ddbe6f332102742de55dc7bfd1479b0e726b7768c7d25ea1fc3",
+				"dweb:/ipfs/QmWYYSuscXGF5dJRVrS5VpugZSWkdAQX85jVQ2Pupyg7k9"
+			]
+		}
+	},
+	"version": 1
+}
