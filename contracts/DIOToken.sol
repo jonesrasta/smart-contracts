@@ -30,7 +30,7 @@ interface ERC20 {
     event Approval(address indexed owner, address indexed spender, uint256);
 }
 
- contract DIOToken is ERC20 {
+contract DIOToken is ERC20 {
     string public constant name = "DIO Token";
     string public constant symbol = "DIO";
     string public constant decimals = "18";
@@ -48,35 +48,57 @@ interface ERC20 {
         return totalsupply_;
     }
 
-    function balanceOf(address tokenOwner) public override view returns (uint256) {
-        return  balances[tokenOwner];
+    function balanceOf(address tokenOwner)
+        public
+        view
+        override
+        returns (uint256)
+    {
+        return balances[tokenOwner];
     }
 
-    function transfer(address receiver, uint256 numTokens) public override returns (bool) {
+    function transfer(address receiver, uint256 numTokens)
+        public
+        override
+        returns (bool)
+    {
         require(numTokens <= balances[msg.sender]);
-        balances[msg.sender] = balances[msg.sender]-numTokens;
-        balances[receiver] = balances[receiver]+numTokens;
+        balances[msg.sender] = balances[msg.sender] - numTokens;
+        balances[receiver] = balances[receiver] + numTokens;
         emit Transfer(msg.sender, receiver, numTokens);
         return true;
     }
 
-    function approve(address delegate, uint256 numTokens) public override returns (bool) {
+    function approve(address delegate, uint256 numTokens)
+        public
+        override
+        returns (bool)
+    {
         allowed[msg.sender][delegate] = numTokens;
         emit Approval(msg.sender, delegate, numTokens);
         return true;
     }
 
-    function allowance(address owner, address delegate) public override view returns (uint) {
+    function allowance(address owner, address delegate)
+        public
+        view
+        override
+        returns (uint256)
+    {
         return allowed[owner][delegate];
     }
 
-    function transferFrom(address owner, address buyer, uint256 numTokens) public override returns (bool) {
+    function transferFrom(
+        address owner,
+        address buyer,
+        uint256 numTokens
+    ) public override returns (bool) {
         require(numTokens <= balances[owner]);
         require(numTokens <= allowed[owner][msg.sender]);
 
-        balances[owner] = balances[owner]-numTokens;
-        allowed[owner][msg.sender] = allowed[owner][msg.sender]-numTokens;
-        balances[buyer] = balances[buyer]+numTokens;
+        balances[owner] = balances[owner] - numTokens;
+        allowed[owner][msg.sender] = allowed[owner][msg.sender] - numTokens;
+        balances[buyer] = balances[buyer] + numTokens;
         emit Transfer(owner, buyer, numTokens);
         return true;
     }

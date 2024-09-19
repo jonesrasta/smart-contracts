@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.27+commit.40a35a09"
 	},
 	"language": "Solidity",
 	"output": {
@@ -392,7 +392,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/token.sol": "DIOToken"
+			"token.sol": "DIOToken"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -406,12 +406,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/token.sol": {
-			"keccak256": "0x6e68cd08bbce7a79063eae10cc58b073a552b27024ba19ba044bf71e381f968c",
+		"token.sol": {
+			"keccak256": "0xdda58d014dec756e2ef886c2c3e0789c0ff777841fe2335aeae473d550f9833f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca25acef81acaf593edcfcd31943e19112cb8163af080c9475ebb2d449df5f8d",
-				"dweb:/ipfs/QmXY7k4YHVYBzSJkPE9T1M6SJDA4t6gxEGSvQp8pKQDV5u"
+				"bzz-raw://b3f1577709869273830b9591e8b8479f1511674d03a08bc105283933da754846",
+				"dweb:/ipfs/Qmaw6LzwP3mVr2sis4Rwj2p87ZRMe3LC5hPJ38CrS2Jadc"
 			]
 		}
 	},
